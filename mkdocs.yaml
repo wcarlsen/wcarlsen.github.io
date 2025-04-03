@@ -4,7 +4,7 @@ theme:
   name: material
   font:
     text: JetBrains Mono
-    code: Comic Neue
+    code: JetBrains Mono
   logo: assets/logo.png
   features:
     - header.autohide
