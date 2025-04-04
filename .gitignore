@@ -2,4 +2,8 @@
 .cache
 site
 .env
-iac
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+secrets.yaml
+.sops.yaml
