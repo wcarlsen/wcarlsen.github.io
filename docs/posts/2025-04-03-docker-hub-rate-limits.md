@@ -23,7 +23,7 @@ Where there any side effects?
 
 1. All image references in manifests has to change from `nginx:latest` to `ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/docker-hub/nginx:latest` (don't use latest)
 
-2. Flux GitOps ImageAutomationUpdate breaks for CRD resources that reference images
+2. Flux GitOps ImageUpdateAutomation breaks for CRD resources that reference images
 
 3. Renovate updates breaks because the cache doesn't have knowledge of new tags
 

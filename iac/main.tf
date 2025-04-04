@@ -1,10 +1,12 @@
 locals {
   gh_pages_branch = "gh-pages"
+  name = "wcarlsen.github.io"
 }
 
 resource "github_repository" "this" {
-  name        = "wcarlsen.github.io"
+  name        = local.name
   description = "My personal blog"
+  homepage_url = local.name
 
   visibility             = "public"
   delete_branch_on_merge = true
