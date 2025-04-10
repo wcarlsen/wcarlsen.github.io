@@ -55,6 +55,7 @@ An experiment trying, via optomechanical effects, to laser cool a nano-membrane 
 * kubernetes/autoscaler contributor [https://github.com/kubernetes/autoscaler/pull/6482](https://github.com/kubernetes/autoscaler/pull/6482)
 * loft/vcluster contributor [https://github.com/loft-sh/vcluster/pull/318](https://github.com/loft-sh/vcluster/pull/318) and [https://github.com/loft-sh/vcluster/pull/383](https://github.com/loft-sh/vcluster/pull/383)
 * Co-creator of Crossplane provider for Confluent Kafka (now archived) [https://github.com/dfds/provider-confluent](https://github.com/dfds/provider-confluent)
+* Certified Kubernetes Administrator (CKA) 2020-2022
 * Recieved Niels Bohr Institute yearly teaching prize in 2013 the Jens Martin Knudsen teaching prize for the performance done in laboratory courses in Classical Mechanics 1 & 2. Teaching students physics, laboratory routines, statistics and programming.
 
 ## About me
