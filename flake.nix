@@ -2,7 +2,7 @@
   description = "wcarlsen's blog flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -17,6 +17,9 @@
           buildInputs = with pkgs; [
             mkdocs
             python312Packages.mkdocs-material
+            python312Packages.cachecontrol
+            python312Packages.cachecontrol.optional-dependencies.filecache
+            python312Packages.mkdocs-rss-plugin
           ];
         };
       };

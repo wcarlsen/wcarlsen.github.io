@@ -36,6 +36,10 @@ plugins:
       authors: false
   - search
   - tags
+  - rss:
+      match_path: posts/.*
+      date_from_meta:
+        as_creation: date
 extra:
   generator: false
   social:
