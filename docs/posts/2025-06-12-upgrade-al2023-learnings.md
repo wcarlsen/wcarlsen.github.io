@@ -37,4 +37,4 @@ patches:
       name: image-reflector-controller
 ```
 
-We are now enjoing AL2023 and are so far happy with upgrade.
+We are now enjoing AL2023 and are so far happy with the upgrade.
