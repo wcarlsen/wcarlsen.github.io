@@ -63,8 +63,8 @@ repos:
     entry: kubeconform
     args:
     - -strict
-    - -skip
     - -kubernetes-version 1.33.0
+    - -skip
     - CustomResourceDefinition,Kustomization
     - -schema-location
     - default
