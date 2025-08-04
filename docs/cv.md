@@ -2,13 +2,19 @@
 
 ## Resume
 
-I (Willi Carlsen) am 37 years old and work as a Senior Cloud Engineer at Veo Technologies, a company that strives to make sports technology available to the masses. I consider myself an AWS and Kubernetes expert, and I have spent the last ~2.5 years building multiple highly scalable Kubernetes clusters for video processing, running more than 2000 nodes at peak. Before that I used ~4 years supporting digital transformation at DFDS building a developer platform utilizing AWS, Kubernetes and Kafka.
+I (Willi Carlsen) am 37 years old and work as a Senior Cloud Engineer at Veo Technologies, a company that strives to make sports technology available to the masses. I consider myself an AWS and Kubernetes expert, and I have spent the last ~3 years building multiple highly scalable Kubernetes clusters for video processing, running more than 2000 nodes at peak. Before that I used ~4 years supporting digital transformation at DFDS building a developer platform utilizing AWS, Kubernetes and Kafka.
 
 ## Experience
 
+### Cloud Engineer
+
+##### DFDS (Aug 25 - present)
+
+Too early to say...
+
 ### Senior Cloud Engineer
 
-##### Veo Technologies (Aug 22 - present)
+##### Veo Technologies (Aug 22 - Jul 25)
 
 Building highly scalable Kubernetes clusters supporting video processing in AWS.
 
