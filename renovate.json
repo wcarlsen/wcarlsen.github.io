@@ -2,4 +2,7 @@
   "nix": {
     "enabled": true
   }
+  "pre-commit": {
+    "enabled": true
+  }
 }
