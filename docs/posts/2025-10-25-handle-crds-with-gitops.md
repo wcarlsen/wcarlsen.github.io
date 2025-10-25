@@ -10,7 +10,6 @@ tags:
 
 In this post we will discuss caveats with full lifecycle management of Custom Resource Definitions (CRDs) with Helm in a GitOps context and give a possible solution.
 
-
 ### Helm caveats with CRDs lifecycle management
 
 Helm is very good getting CRDs into the cluster at install, but updating and deleting them is where problems tend to arrise. There are solutions in place, like seperate chart for CRDs, but it is very much dependent on how the chart is structured and implemented. Helm documentation has a full section on this [here](https://helm.sh/docs/chart_best_practices/custom_resource_definitions/). In summary they write
@@ -76,9 +75,9 @@ resources:
 The CRDs can normally be generated in one of the two following ways using `helm` cli
 
 ```bash
-	helm show crds CHART --repo URL --version VERSION > crds.yaml
-  # or
-	helm template RELEASE_NAME CHART --repo URL --version VERSION --set installCRDs=true --kube-version KUBE_VERSION | yq '. | select(.kind == "CustomResourceDefinition")' > crds.yaml
+helm show crds CHART --repo URL --version VERSION > crds.yaml
+# or
+helm template RELEASE_NAME CHART --repo URL --version VERSION --set installCRDs=true --kube-version KUBE_VERSION | yq '. | select(.kind == "CustomResourceDefinition")' > crds.yaml
 ```
 
 for above cert-manager example the latter option works, but it is rare that it is the complex option of the two. Since we now have documented how to generate the CRDs, automation can be easily added and how I have done it will be show in later post.
