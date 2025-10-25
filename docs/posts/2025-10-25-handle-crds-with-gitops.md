@@ -4,6 +4,7 @@ tags:
   - kubernetes
   - gitops
   - flux
+  - helm
 ---
 
 # Handle CRDs with GitOps
