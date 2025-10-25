@@ -13,7 +13,7 @@ In this post we will discuss caveats with full lifecycle management of Custom Re
 
 ### Helm caveats with CRDs lifecycle management
 
-Helm is very good getting CRDs into the cluster at install, but updating and deleting them is where problems tend to arrise. There are solutions in place, like seperate chart for CRDs, but it is very much dependent on how the chart is structured and implemented. Helm documentation has a full section on this [here](https://helm.sh/docs/chart_best_practices/custom_resource_definitions/). In summary they write
+Helm is very good at getting CRDs into the cluster at install, but updating and deleting them is where problems tend to arrise. There are solutions in place, like seperate chart for CRDs, but it is very much dependent on how the chart is structured and implemented. Helm documentation has a full section on this [here](https://helm.sh/docs/chart_best_practices/custom_resource_definitions/). In summary they write
 
 > There is no support at this time for upgrading or deleting CRDs using Helm. This was an explicit decision after much community discussion due to the danger for unintentional data loss. Furthermore, there is currently no community consensus around how to handle CRDs and their lifecycle. As this evolves, Helm will add support for those use cases
 
