@@ -1,5 +1,5 @@
 ---
-date: 2025-10-25
+date: 2025-11-01
 tags:
   - kubernetes
   - gitops
@@ -61,7 +61,7 @@ patches:
 
 The examples might not look so different on the surface and I also did the patching example a disfavor, but not using a placeholder and replacing that. But I wanted to show that from the base configurations point of view there is no knowledge of an annotionation, so if I where to add a similar annotation to the base it would eventually be overruled by the patch eventhough there are no indicators of it being a parameter. Also the overhead of knowing the exact resource and yaml path isn't great. Of course the envsubt example needs to be parsed through the envsubst command `KARPENTER_ROLE_ARN="arn:aws:iam::1234:role/karpenter-role" envsubst < base/sa.yaml`. But the difference is that my base configuration clearly expects a variable and I do not need to know the resource Kind, name, maybe namespace and yaml path to replace it.
 
-### `postBuildSubstitutions` FluxCD equivalent of `envsubst`
+### `postBuild.substitution` FluxCD equivalent of `envsubst`
 
 FluxCD (and probably also ArgoCD) has a trick up their sleeve called `postBuild.substitution` see [here](https://fluxcd.io/flux/components/kustomize/kustomizations/#post-build-variable-substitution), which works like `envsubst`. Let take above example and try using this feature with the custom resource `Kustomization` provided by flux
 
