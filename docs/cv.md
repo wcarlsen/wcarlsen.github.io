@@ -2,7 +2,7 @@
 
 ## Resume
 
-I (Willi Carlsen) am 37 years old and work as a Senior Cloud Engineer at Veo Technologies, a company that strives to make sports technology available to the masses. I consider myself an AWS and Kubernetes expert, and I have spent the last ~3 years building multiple highly scalable Kubernetes clusters for video processing, running more than 2000 nodes at peak. Before that I used ~4 years supporting digital transformation at DFDS building a developer platform utilizing AWS, Kubernetes and Kafka.
+I (Willi Carlsen) am 37 years old and work as a Senior Cloud Engineer at DFDS, a big danish logistics company, where I support digital transformation via building a developer platform utilizing AWS, Kubernetes, Kafka and more. I consider myself an AWS and Kubernetes expert and is an active contributor in the opensource community surrounding it.
 
 ## Experience
 
@@ -16,7 +16,7 @@ Too early to say...
 
 ##### Veo Technologies (Aug 22 - Jul 25)
 
-Building highly scalable Kubernetes clusters supporting video processing in AWS.
+Build highly scalable Kubernetes clusters supporting video processing in AWS. Veo Technologies, is a company that strives to make sports technology available to the masses. I spent ~3 years building multiple highly scalable Kubernetes clusters for video processing, running more than ~2000 GPU nodes at peak every weekend.
 
 ### Site Reliability Engineer
 
@@ -58,6 +58,7 @@ An experiment trying, via optomechanical effects, to laser cool a nano-membrane 
 
 ## Other things that I'm proud of
 
+* 1Password/load-secrets-action contributor [https://github.com/1Password/load-secrets-action/pull/118](https://github.com/1Password/load-secrets-action/pull/118)
 * kubernetes/autoscaler contributor [https://github.com/kubernetes/autoscaler/pull/6482](https://github.com/kubernetes/autoscaler/pull/6482)
 * loft/vcluster contributor [https://github.com/loft-sh/vcluster/pull/318](https://github.com/loft-sh/vcluster/pull/318) and [https://github.com/loft-sh/vcluster/pull/383](https://github.com/loft-sh/vcluster/pull/383)
 * Co-creator of Crossplane provider for Confluent Kafka (now archived) [https://github.com/dfds/provider-confluent](https://github.com/dfds/provider-confluent)
