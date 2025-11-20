@@ -10,7 +10,7 @@ repos:
         exclude: mkdocs.yaml
       - id: end-of-file-fixer
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.24.3
+    rev: v8.29.1
     hooks:
       - id: gitleaks
   - repo: https://github.com/python-jsonschema/check-jsonschema
