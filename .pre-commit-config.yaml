@@ -25,7 +25,7 @@ repos:
           - --disable
           - MD013
   - repo: https://github.com/astro/deadnix
-    rev: v1.3.0
+    rev: v1.3.1
     hooks:
       - id: deadnix
         stages: [pre-commit]
