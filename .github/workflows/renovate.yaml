@@ -14,7 +14,7 @@ jobs:
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v44.0.3
         env:
-          LOG_LEVEL: 'info'
+          LOG_LEVEL: 'debug'
           RENOVATE_INTERNAL_CHECKS_FILTER: none
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
