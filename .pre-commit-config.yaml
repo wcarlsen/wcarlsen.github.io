@@ -34,7 +34,7 @@ repos:
     hooks:
       - id: alejandra-system
   - repo: https://github.com/fidgetingbits/pre-commit-statix
-    rev: v1.0.0
+    rev: v1.1
     hooks:
       - id: statix-fix
       - id: statix-check
