@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['config:base'],
   branchPrefix: 'update/renovate/',
   username: 'renovate',
   gitAuthor: 'Renovate Bot <bot@renovateapp.com>',
