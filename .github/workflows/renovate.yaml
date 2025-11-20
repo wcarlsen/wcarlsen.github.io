@@ -18,3 +18,4 @@ jobs:
           RENOVATE_INTERNAL_CHECKS_FILTER: none
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          configurationFile: renovate.js
