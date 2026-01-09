@@ -16,10 +16,10 @@
         default = pkgs.mkShell {
           buildInputs = with pkgs; [
             mkdocs
-            python313Packages.mkdocs-material
-            python313Packages.cachecontrol
-            python313Packages.cachecontrol.optional-dependencies.filecache
-            python313Packages.mkdocs-rss-plugin
+            python314Packages.mkdocs-material
+            python314Packages.cachecontrol
+            python314Packages.cachecontrol.optional-dependencies.filecache
+            python314Packages.mkdocs-rss-plugin
           ];
         };
       };

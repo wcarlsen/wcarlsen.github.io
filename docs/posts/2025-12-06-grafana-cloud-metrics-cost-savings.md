@@ -43,4 +43,3 @@ As a last option we enable auto-mode for adaptive metrics, which means that it w
 ### Lacking cost impact feedback
 
 We quickly found out that the way Grafana Cloud does billing dashboards you are kind of flying blind and you are left with proxy dashboards such as active metrics series and sample rate. I will give a short update once we actually realise the savings achieved.
- 
