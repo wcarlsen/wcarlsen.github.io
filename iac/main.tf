@@ -33,3 +33,9 @@ resource "github_branch" "this" {
   branch     = local.gh_pages_branch
   depends_on = [github_branch_default.this]
 }
+
+resource "github_workflow_repository_permissions" "this" {
+  default_workflow_permissions     = "write"
+  can_approve_pull_request_reviews = false
+  repository                       = github_repository.this.name
+}
