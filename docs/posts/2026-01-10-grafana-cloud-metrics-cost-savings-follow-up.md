@@ -12,7 +12,7 @@ In the previous post I wrote about our efforts reduce cost for Grafana Cloud met
 * Filter/drop unused metrics (keep only used ones)
 * Enable adaptive metrics
 
-but I also ended up concluding that we lacked impact feedback and only had proxy indicators. Our goal was ambitious and more concrete we set out to save 80% on our metrics bill. This post serves as conclusion on our efforts.
+but I also ended up concluding that we lacked impact feedback and only had proxy indicators. Our goal was ambitious and more concrete we set out to save 80% on our metrics bill. This post serves as a conclusion on our efforts.
 
 ### Conclusion
 
