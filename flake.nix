@@ -15,7 +15,7 @@
       devShells = {
         default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            mkdocs
+            python314Packages.mkdocs
             python314Packages.mkdocs-material
             python314Packages.cachecontrol
             python314Packages.cachecontrol.optional-dependencies.filecache
