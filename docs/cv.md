@@ -6,11 +6,11 @@ I (Willi Carlsen) am 37 years old and work as a Senior Cloud Engineer at DFDS, a
 
 ## Experience
 
-### Cloud Engineer
+### Senior Cloud Engineer
 
 ##### DFDS (Aug 25 - present)
 
-Too early to say...
+Developing and maintaining DFDS's platform setup, helping developers to fast and easy build and deploy. DFDS has been investing in Cloud and Kubernetes and currently runs cluster with almost ~3000 pods.
 
 ### Senior Cloud Engineer
 
@@ -58,11 +58,13 @@ An experiment trying, via optomechanical effects, to laser cool a nano-membrane 
 
 ## Other things that I'm proud of
 
-* 1Password/load-secrets-action contributor [https://github.com/1Password/load-secrets-action/pull/118](https://github.com/1Password/load-secrets-action/pull/118)
-* kubernetes/autoscaler contributor [https://github.com/kubernetes/autoscaler/pull/6482](https://github.com/kubernetes/autoscaler/pull/6482)
-* loft/vcluster contributor [https://github.com/loft-sh/vcluster/pull/318](https://github.com/loft-sh/vcluster/pull/318) and [https://github.com/loft-sh/vcluster/pull/383](https://github.com/loft-sh/vcluster/pull/383)
-* Co-creator of Crossplane provider for Confluent Kafka (now archived) [https://github.com/dfds/provider-confluent](https://github.com/dfds/provider-confluent)
-* Certified Kubernetes Administrator (CKA) 2020-2022
+* [1Password/load-secrets-action contributor](https://github.com/1Password/load-secrets-action/pull/118)
+* [Home-manager maintainer and contributor](https://github.com/nix-community/home-manager/pulls?q=is%3Apr+is%3Aclosed+author%3Awcarlsen)
+* [Nixpkgs maintainer and contributor](https://github.com/NixOS/nixpkgs/pulls?q=is%3Apr+author%3Awcarlsen+is%3Aclosed)
+* [kubernetes/autoscaler contributor](https://github.com/kubernetes/autoscaler/pull/6482)
+* [loft/vcluster contributor](https://github.com/loft-sh/vcluster/pulls?q=is%3Apr+author%3Awcarlsen+is%3Aclosed)
+* [Co-creator of Crossplane provider for Confluent Kafka (now archived)](https://github.com/dfds/provider-confluent)
+* [Certified Kubernetes Administrator (CKA) 2020](assets/documents/cka.pdf)
 * Recieved Niels Bohr Institute yearly teaching prize in 2013 the Jens Martin Knudsen teaching prize for the performance done in laboratory courses in Classical Mechanics 1 & 2. Teaching students physics, laboratory routines, statistics and programming.
 
 ## About me
