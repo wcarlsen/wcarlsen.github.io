@@ -62,7 +62,7 @@ The `devShells` can be invoked with the following nix command: `nix develop`. I 
 
 ### So how does this blog use Nix?
 
-Now that we have some limited knowledge about Nix and Flakes, we can start looking at how this blog uses it. In the root of the [GitHub project](https://github.com/wcarlsen.github.io) you will find a `flake.nix` which specifies `MkDocs` and all the plugins used to create this blog, and, because I use `direnv`, it will automatically install all dependencies and drop me into a development shell so I can start writing and validate my changes locally. I find the "holy trinity" `flakes`, `direnv` and `make` really useful. So now we have a reproducible development setup; how do we use it in places other than locally? Let's look at GitHub Actions as an example.
+Now that we have some limited knowledge about Nix and Flakes, we can start looking at how this blog uses it. In the root of the [GitHub project](https://github.com/wcarlsen/wcarlsen.github.io) you will find a `flake.nix` which specifies `MkDocs` and all the plugins used to create this blog, and, because I use `direnv`, it will automatically install all dependencies and drop me into a development shell so I can start writing and validate my changes locally. I find the "holy trinity" `flakes`, `direnv` and `make` really useful. So now we have a reproducible development setup; how do we use it in places other than locally? Let's look at GitHub Actions as an example.
 
 ### GitHub Actions and Flakes
 
