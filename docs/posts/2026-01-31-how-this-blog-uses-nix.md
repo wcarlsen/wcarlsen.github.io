@@ -5,7 +5,7 @@ tags:
   - github
 ---
 
-# How this blog uses Nix
+# How this blog uses Nix :simple-nixos:
 
  Nix is an advanced tool for building, packaging, and configuring software in a reliable, reproducible and declarative way, that has been gaining a lot of popularity over recent years. Nix first came up on my radar around the early 2020s, but it took a couple of years before I really started investing time on it other than just reading. It is really powerful but also very different from what I was used to. I now use NixOS as my daily driver (work and home) and use Nix Flakes to declare my development shells in various projects. In this post we will go over how I first started using Nix and how I have declared a development shell for this blog using Nix Flakes.
 
