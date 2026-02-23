@@ -1,1 +1,1 @@
-# Spaghetti :spaghetti: (blog)
+# Spaghetti :spaghetti: (tech blog)

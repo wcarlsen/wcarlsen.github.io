@@ -4,7 +4,7 @@ run:
 	mkdocs serve
 
 build:
-	mkdocs build
+	mkdocs build --strict
 
 deploy:
 	git config user.name github-actions[bot]
