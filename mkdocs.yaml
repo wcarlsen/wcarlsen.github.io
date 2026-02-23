@@ -1,5 +1,6 @@
 site_name: wcarlsen's blog
 site_url: https://wcarlsen.github.io/
+site_description: My personal blog
 repo_name: wcarlsen/wcarlsen.github.io
 repo_url: https://github.com/wcarlsen/wcarlsen.github.io
 theme:
@@ -43,11 +44,12 @@ plugins:
       authors: false
   - search
   - tags
-  - optimize
   - rss:
-      match_path: docs/posts/.*
+      match_path: posts/.*
+      abstract_chars_count: -1
       date_from_meta:
         as_creation: date
+  - optimize
 extra:
   generator: false
   social:
