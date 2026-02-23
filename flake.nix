@@ -20,6 +20,7 @@
             python314Packages.cachecontrol
             python314Packages.cachecontrol.optional-dependencies.filecache
             python314Packages.mkdocs-rss-plugin
+            pngquant
           ];
         };
       };

@@ -1,16 +1,21 @@
 site_name: wcarlsen's blog
 site_url: https://wcarlsen.github.io/
+repo_name: wcarlsen/wcarlsen.github.io
+repo_url: https://github.com/wcarlsen/wcarlsen.github.io
 theme:
   name: material
   font:
     text: JetBrains Mono
     code: JetBrains Mono
   logo: assets/logo.png
+  icon:
+    repo: fontawesome/brands/github
   features:
     - header.autohide
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
+      accent: light green
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
@@ -18,6 +23,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
+      accent: light green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -25,6 +31,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
+      accent: light green
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -36,8 +43,9 @@ plugins:
       authors: false
   - search
   - tags
+  - optimize
   - rss:
-      match_path: posts/.*
+      match_path: docs/posts/.*
       date_from_meta:
         as_creation: date
 extra:
