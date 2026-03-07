@@ -1,7 +1,7 @@
 .PHONY: run build deploy
 
 run:
-	mkdocs serve --strict
+	mkdocs serve --strict --open
 
 build:
 	mkdocs build --strict
