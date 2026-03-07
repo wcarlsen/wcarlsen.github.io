@@ -22,7 +22,7 @@ Build highly scalable Kubernetes clusters supporting video processing in AWS. Ve
 
 ##### DFDS (May 19 - Aug 22)
 
-Supporting digital transformation towards composable architecture and faster time to market via a developer platform utilizing AWS, Kubernetes and Kafka. The majority of the projects are open source on Github [https://github.com/DFDS](https://github.com/DFDS), go check them out.
+Supporting digital transformation towards composable architecture and faster time to market via a developer platform utilizing AWS, Kubernetes and Kafka. The majority of the projects are open source on Github [https://github.com/dfds](https://github.com/dfds), go check them out.
 
 ### Data Engineer
 
@@ -59,8 +59,8 @@ An experiment trying, via optomechanical effects, to laser cool a nano-membrane 
 ## Other things that I'm proud of
 
 * [1Password/load-secrets-action contributor](https://github.com/1Password/load-secrets-action/pull/118)
-* [Home-manager maintainer and contributor](https://github.com/nix-community/home-manager/pulls?q=is%3Apr+is%3Aclosed+author%3Awcarlsen)
-* [Nixpkgs maintainer and contributor](https://github.com/NixOS/nixpkgs/pulls?q=is%3Apr+author%3Awcarlsen+is%3Aclosed)
+* [Home-manager module maintainer and contributor](https://github.com/nix-community/home-manager/pulls?q=is%3Apr+is%3Aclosed+author%3Awcarlsen)
+* [Nixpkgs package maintainer and contributor](https://github.com/NixOS/nixpkgs/pulls?q=is%3Apr+author%3Awcarlsen+is%3Aclosed)
 * [kubernetes/autoscaler contributor](https://github.com/kubernetes/autoscaler/pull/6482)
 * [loft/vcluster contributor](https://github.com/loft-sh/vcluster/pulls?q=is%3Apr+author%3Awcarlsen+is%3Aclosed)
 * [Co-creator of Crossplane provider for Confluent Kafka (now archived)](https://github.com/dfds/provider-confluent)
