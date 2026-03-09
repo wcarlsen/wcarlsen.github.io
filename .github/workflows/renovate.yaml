@@ -1,4 +1,4 @@
-name: Renovate
+name: renovate
 on:
   schedule:
     - cron: "15 2 * * 1-5" # Every week day at 02.15
@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Self-hosted Renovate
-        uses: renovatebot/github-action@v46
+        uses: renovatebot/github-action@v46.1.4
         env:
           LOG_LEVEL: ${{ vars.LOG_LEVEL || 'info' }}
           RENOVATE_INTERNAL_CHECKS_FILTER: none
