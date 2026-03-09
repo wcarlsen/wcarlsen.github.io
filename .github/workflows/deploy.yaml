@@ -3,6 +3,13 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - ".github/workflows/*"
+      - .gitignore
+      - .pre-commit-config.yaml
+      - iac/*
+      - README.md
+      - renovate.json
 jobs:
   deploy:
     runs-on: ubuntu-latest
