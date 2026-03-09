@@ -9,7 +9,7 @@ on:
       - .pre-commit-config.yaml
       - iac/*
       - README.md
-      - renovate.json
+      - renovate.js
 jobs:
   deploy:
     runs-on: ubuntu-latest

@@ -3,6 +3,13 @@ on:
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - .github/workflows/*
+      - .gitignore
+      - .pre-commit-config.yaml
+      - iac/*
+      - README.md
+      - renovate.js
 jobs:
   build:
     runs-on: ubuntu-latest
