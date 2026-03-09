@@ -7,3 +7,9 @@ variable "state_encryption_passphrase" {
   }
   sensitive = true
 }
+
+variable "github_token" {
+  type = string
+  description = "Github fine grained token used for Renovate action"
+  sensitive = true
+}

@@ -39,3 +39,9 @@ resource "github_workflow_repository_permissions" "this" {
   can_approve_pull_request_reviews = false
   repository                       = github_repository.this.name
 }
+
+resource "github_actions_secret" "renovate" {
+  repository       = github_repository.this.name
+  secret_name      = "RENOVATE_TOKEN"
+  plaintext_value  = var.github_token
+}
