@@ -1,7 +1,7 @@
 name: renovate
 on:
   schedule:
-    - cron: "15 2 * * 1-5" # Every week day at 02.15
+    - cron: "00 8 * * 1,5" # At 08:00 on Monday and Friday
   workflow_dispatch:
 jobs:
   renovate:

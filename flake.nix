@@ -23,6 +23,13 @@
             pngquant
           ];
         };
+        iac = pkgs.mkShell {
+          buildInputs = with pkgs; [
+            sops
+            opentofu
+            gh
+          ];
+        };
       };
     });
 }

@@ -13,7 +13,7 @@ resource "github_repository" "this" {
   auto_init              = true
 
   dynamic "pages" {
-    for_each = true ? [""] : [] # on first run this should false, cannot reference branch that don't exists
+    for_each = true ? [""] : [] # on first run this should be false, cannot reference branch that don't exists
 
     content {
       source {
