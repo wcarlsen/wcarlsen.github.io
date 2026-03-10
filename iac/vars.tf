@@ -9,7 +9,7 @@ variable "state_encryption_passphrase" {
 }
 
 variable "github_token" {
-  type = string
-  description = "Github fine grained token used for Renovate action"
-  sensitive = true
+  type        = string
+  description = "Github fine grained token used for Renovate action see https://docs.renovatebot.com/modules/platform/github/#running-using-a-fine-grained-token"
+  sensitive   = true
 }

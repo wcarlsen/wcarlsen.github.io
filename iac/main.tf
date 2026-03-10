@@ -11,6 +11,7 @@ resource "github_repository" "this" {
   visibility             = "public"
   delete_branch_on_merge = true
   auto_init              = true
+  has_issues             = true
 
   dynamic "pages" {
     for_each = true ? [""] : [] # on first run this should be false, cannot reference branch that don't exists
@@ -41,7 +42,7 @@ resource "github_workflow_repository_permissions" "this" {
 }
 
 resource "github_actions_secret" "renovate" {
-  repository       = github_repository.this.name
-  secret_name      = "RENOVATE_TOKEN"
-  plaintext_value  = var.github_token
+  repository      = github_repository.this.name
+  secret_name     = "RENOVATE_TOKEN"
+  plaintext_value = var.github_token
 }
