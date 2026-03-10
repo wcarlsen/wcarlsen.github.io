@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['config:recommended'],
   branchPrefix: 'update/renovate/',
   username: 'renovate-sa',
   onboarding: false,
