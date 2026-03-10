@@ -46,5 +46,19 @@ module.exports = {
       automerge: false,
       dependencyDashboard: true,
     },
+    {
+      matchDatasources: ["github-releases"],
+      matchDepNames: ["hashicorp/terraform"],
+      enabled: false
+    }
   ],
+  customManagers: [
+    {
+      customType: "regex",
+      fileMatch: ["^versions.tf$"],
+      matchStrings: ["required_version\\s=\\s\"(?<currentValue>.*?)\""],
+      depNameTemplate: "opentofu/opentofu",
+      datasourceTemplate: "github-releases"
+    },
+  ]
 };
