@@ -15,5 +15,5 @@ jobs:
           LOG_LEVEL: ${{ vars.LOG_LEVEL || 'info' }}
           RENOVATE_INTERNAL_CHECKS_FILTER: none
         with:
-          configurationFile: renovate.js
+          configurationFile: renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
