@@ -3,7 +3,6 @@ module.exports = {
   username: 'renovate-sa',
   onboarding: false,
   requireConfig: 'optional',
-  configMigration: true,
   platform: 'github',
   prHourlyLimit: 0,
   prConcurrentLimit: 0,
