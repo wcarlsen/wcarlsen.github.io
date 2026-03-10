@@ -3,6 +3,7 @@ module.exports = {
   username: 'renovate-sa',
   onboarding: false,
   requireConfig: 'optional',
+  configMigration: true,
   platform: 'github',
   repositories: [
     'wcarlsen/wcarlsen.github.io',
