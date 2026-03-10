@@ -5,6 +5,9 @@ module.exports = {
   requireConfig: 'optional',
   configMigration: true,
   platform: 'github',
+  prHourlyLimit: 0,
+  prConcurrentLimit: 0,
+  branchConcurrentLimit: 0,
   repositories: [
     'wcarlsen/wcarlsen.github.io',
   ],
