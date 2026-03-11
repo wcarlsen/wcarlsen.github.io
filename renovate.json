@@ -1,16 +1,9 @@
 {
   "extends": ["config:recommended"],
   "branchPrefix": "update/renovate/",
-  "username": "renovate-sa",
-  "onboarding": false,
-  "requireConfig": "optional",
-  "platform": "github",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
-  "repositories": [
-    "wcarlsen/wcarlsen.github.io"
-  ],
   "pre-commit": {
     "enabled": true
   },

@@ -14,6 +14,7 @@ jobs:
         env:
           LOG_LEVEL: ${{ vars.LOG_LEVEL || 'info' }}
           RENOVATE_INTERNAL_CHECKS_FILTER: none
+          RENOVATE_AUTODISCOVER: true
         with:
           configurationFile: renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
