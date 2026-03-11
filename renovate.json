@@ -1,5 +1,7 @@
 {
-  "extends": ["config:recommended"],
+  "extends": [
+    "config:recommended"
+  ],
   "branchPrefix": "update/renovate/",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
@@ -44,16 +46,24 @@
       "dependencyDashboard": true
     },
     {
-      "matchDatasources": ["github-releases"],
-      "matchDepNames": ["hashicorp/terraform"],
+      "matchDatasources": [
+        "github-releases"
+      ],
+      "matchDepNames": [
+        "hashicorp/terraform"
+      ],
       "enabled": false
     }
   ],
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^versions.tf$"],
-      "matchStrings": ["required_version\\s=\\s\"(?<currentValue>.*?)\""],
+      "managerFilePatterns": [
+        "/^versions.tf$/"
+      ],
+      "matchStrings": [
+        "required_version\\s=\\s\"(?<currentValue>.*?)\""
+      ],
       "depNameTemplate": "opentofu/opentofu",
       "datasourceTemplate": "github-releases"
     }
