@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Self-hosted Renovate
-        uses: renovatebot/github-action@v46.1.9
+        uses: renovatebot/github-action@v46.1.10
         env:
           LOG_LEVEL: ${{ vars.LOG_LEVEL || 'info' }}
           RENOVATE_INTERNAL_CHECKS_FILTER: none
