@@ -2,7 +2,7 @@
 
 ## Resume
 
-I (Willi Carlsen) am 37 years old and work as a Senior Cloud Engineer at DFDS, a big danish logistics company, where I support digital transformation via building a developer platform utilizing AWS, Kubernetes, Kafka and more. I consider myself an AWS and Kubernetes expert and is an active contributor in the opensource community surrounding it.
+I (Willi Carlsen) am 38 years old and work as a Senior Cloud Engineer at DFDS, a big danish logistics company, where I support digital transformation via building a developer platform utilizing AWS, Kubernetes, Kafka and more. I consider myself an AWS and Kubernetes expert and is an active contributor in the opensource community surrounding it.
 
 ## Experience
 
