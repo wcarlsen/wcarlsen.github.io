@@ -21,6 +21,9 @@
             python314Packages.cachecontrol.optional-dependencies.filecache
             python314Packages.mkdocs-rss-plugin
             pngquant
+            pre-commit
+            check-jsonschema # requirement for pre-commit
+            alejandra # requirement for pre-commit
           ];
         };
         iac = pkgs.mkShell {

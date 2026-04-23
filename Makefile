@@ -3,7 +3,10 @@
 run:
 	mkdocs serve --strict --open
 
-build:
+test:
+	pre-commit run -a
+
+build: test
 	mkdocs build --strict
 
 deploy:
