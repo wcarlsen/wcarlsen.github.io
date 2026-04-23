@@ -9,14 +9,15 @@ repos:
       - id: check-yaml
         exclude: mkdocs.yaml
       - id: end-of-file-fixer
-  - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.30.1
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
     hooks:
-      - id: gitleaks
+    -   id: detect-secrets
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.37.1
     hooks:
       - id: check-github-workflows
+      - id: check-renovate
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.48.0
     hooks:
@@ -24,22 +25,17 @@ repos:
         args:
           - --disable
           - MD013
-  - repo: https://github.com/astro/deadnix
-    rev: v1.3.1
-    hooks:
-      - id: deadnix
-        stages: [pre-commit]
   - repo: https://github.com/kamadorueda/alejandra
     rev: 4.0.0
     hooks:
       - id: alejandra-system
   - repo: https://github.com/fidgetingbits/pre-commit-statix
-    rev: v1.1
+    rev: v1.0.0
     hooks:
       - id: statix-fix
       - id: statix-check
   - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: 43.139.1
+    rev: 43.139.6
     hooks:
       - id: renovate-config-validator
         args: [--strict]

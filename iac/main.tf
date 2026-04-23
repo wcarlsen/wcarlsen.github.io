@@ -43,6 +43,6 @@ resource "github_workflow_repository_permissions" "this" {
 
 resource "github_actions_secret" "renovate" {
   repository      = github_repository.this.name
-  secret_name     = "RENOVATE_TOKEN"
+  secret_name     = "RENOVATE_TOKEN" # pragma: allowlist secret
   plaintext_value = var.github_token
 }
