@@ -13,14 +13,10 @@ resource "github_repository" "this" {
   auto_init              = true
   has_issues             = true
 
-  dynamic "pages" {
-    for_each = true ? [""] : [] # on first run this should be false, cannot reference branch that don't exists
-
-    content {
-      source {
-        branch = local.gh_pages_branch
-      }
-    }
+ lifecycle {
+    ignore_changes = [
+      pages,
+    ]
   }
 }
 
@@ -35,6 +31,16 @@ resource "github_branch" "this" {
   depends_on = [github_branch_default.this]
 }
 
+resource "github_repository_pages" "this" {
+  repository = github_repository.this.name
+  build_type = "legacy"
+
+  source {
+    branch = github_branch.this.branch
+    path = "/"
+  }
+}
+
 resource "github_workflow_repository_permissions" "this" {
   default_workflow_permissions     = "write"
   can_approve_pull_request_reviews = false
@@ -44,5 +50,5 @@ resource "github_workflow_repository_permissions" "this" {
 resource "github_actions_secret" "renovate" {
   repository      = github_repository.this.name
   secret_name     = "RENOVATE_TOKEN"
-  plaintext_value = var.github_token
+  value = var.github_token
 }
