@@ -24,11 +24,6 @@ repos:
         args:
           - --disable
           - MD013
-  - repo: https://github.com/astro/deadnix
-    rev: v1.3.1
-    hooks:
-      - id: deadnix
-        stages: [pre-commit]
   - repo: https://github.com/kamadorueda/alejandra
     rev: 4.0.0
     hooks:
