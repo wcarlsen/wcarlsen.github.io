@@ -10,6 +10,6 @@ variable "state_encryption_passphrase" {
 
 variable "github_token" {
   type        = string
-  description = "Github fine grained token used for Renovate action see https://docs.renovatebot.com/modules/platform/github/#running-using-a-fine-grained-token"
+  description = "Github fine grained token used for Renovate action see https://docs.renovatebot.com/modules/platform/github/#running-using-a-fine-grained-token. Expiration must not be 366 days or higher."
   sensitive   = true
 }
