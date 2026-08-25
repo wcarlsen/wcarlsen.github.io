@@ -10,7 +10,7 @@ tags:
 
 I have for a long time wanted to play around with Cluster API (CAPI) and I finally got around to test it at work recently. This post will mainly cover how to quickly get up and running using a local Kubernetes distribution as management cluster and provisioning an AWS EKS cluster with CAPI.
 
-### Bootstraping
+### Bootstrapping
 
 CAPI requires a CloudFormation stack to be provisioned and by using [`clusterawsadm`](https://github.com/kubernetes-sigs/cluster-api-provider-aws) we can first output a bootstrap config file for us to tweak and then create the stack.
 
@@ -22,7 +22,7 @@ clusterawsadm bootstrap iam print-config > bootstrap-config.yaml
 clusterawsadm bootstrap iam create-cloudformation-stack --config bootstrap-config.yaml
 ```
 
-Up front the `bootstrap-config.yaml` file doesn't need any tweaking, but it good to have if we need to do changes at a later stage.
+Up front the `bootstrap-config.yaml` file doesn't need any tweaking, but it's good to have if we need to do changes at a later stage.
 
 ```bash
 # Update CloudFormation stack
@@ -31,14 +31,14 @@ clusterawsadm bootstrap iam update-cloudformation-stack --config bootstrap-confi
 
 ### Local management cluster
 
-For some reason I like [`minikube`](https://minikube.sigs.k8s.io/), but you can choose any other local Kubernetes distribution like k3s, kind etc.. Let start the cluster.
+For some reason I like [`minikube`](https://minikube.sigs.k8s.io/), but you can choose any other local Kubernetes distribution like k3s, kind etc.. Let's start the cluster.
 
 ```bash
 # Start local Kubernetes cluster and wait for it to be ready
 minikube start --wait=all
 ```
 
-We now need initialize CAPI with and AWS provider onto our local management cluster with [`clusterctl`](https://github.com/kubernetes-sigs/cluster-api).
+We now need to initialize CAPI with an AWS provider on our local management cluster using [`clusterctl`](https://github.com/kubernetes-sigs/cluster-api).
 
 ```bash
 # Initialize CAPI with AWS specific provider
@@ -57,15 +57,15 @@ We set a bunch of feature flags that are good defaults and I find enablement of 
 * **CAPA_EKS_IAM** enables IAM role management for EKS clusters, allowing Cluster API to create and configure IAM roles needed by EKS.
 * **CAPA_EKS_ADD_ROLES** enables automatic addition of required IAM roles to worker nodes, ensuring they have proper permissions to join and operate in the EKS cluster
 
-Above command will install cert-manager and the following cluster API providers cluster-api, bootstrap-kubeadm, control-plane-kubeadm and infrastructure-aws.
+The above command will install cert-manager and the following Cluster API providers: cluster-api, bootstrap-kubeadm, control-plane-kubeadm and infrastructure-aws.
 
 ### Provision workload cluster
 
-Before we begin provisioning an SSH key pair is required so we will just provision one using [`aws`](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+Before we begin provisioning, an SSH key pair is required, so we'll provision one using the AWS CLI.
 
 ```bash
 # Create SSH key pair
-aws ec2 create-key-pair --key-name default --output json
+aws ec2 create-key-pair --key-name workload --output json
 ```
 
 We are now ready to generate the manifests for our new cluster.
@@ -76,7 +76,7 @@ mkdir k8s/
 
 # Generate cluster manifests
 AWS_REGION=${AWS_REGION} \
-  AWS_SSH_KEY_NAME=default \
+  AWS_SSH_KEY_NAME=workload \
   AWS_CONTROL_PLANE_MACHINE_TYPE=t3.large \
   AWS_NODE_MACHINE_TYPE=t3.large \
   WORKER_MACHINE_COUNT=1 \
@@ -121,7 +121,7 @@ clusterctl move --to-directory backup/
 clusterctl move --from-directory backup/
 ```
 
-This means that our management cluster can potentially become emphemeral, assume we can live without reconcilliation.
+This means that our management cluster can potentially become ephemeral, assuming we can live without reconciliation.
 
 ### Clean up
 
@@ -131,7 +131,7 @@ We can easily clean up. But it is important that we wait for the CAPI controller
 # Take backup (just to be sure)
 clusterctl move --to-directory backup/
 
-# Delete workload cluster (IMPORTANT: this will take some time since the controllers needs to do clean up, so be paitient)
+# Delete workload cluster (IMPORTANT: this will take some time since the controllers need to do cleanup, so be patient)
 kubectl delete -f k8s/
 
 # Delete SSH key pair
