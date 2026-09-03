@@ -42,7 +42,7 @@ We now need to initialize CAPI with an AWS provider on our local management clus
 
 ```bash
 # Initialize CAPI with AWS specific provider
-AWS_B64ENCODED_CREDENTIALS=$(shell clusterawsadm bootstrap credentials encode-as-profile --profile ${AWS_PROFILE}) \
+AWS_B64ENCODED_CREDENTIALS=$(clusterawsadm bootstrap credentials encode-as-profile --profile ${AWS_PROFILE}) \
   EXP_MACHINE_POOL=true \
   EXP_CLUSTER_RESOURCE_SET=true \
   CAPA_EKS_IAM=true \
@@ -81,7 +81,7 @@ AWS_REGION=${AWS_REGION} \
   AWS_NODE_MACHINE_TYPE=t3.large \
   WORKER_MACHINE_COUNT=1 \
   CLUSTER_NAME=workload \
-  CLUSTER_VERSION=1.36 \
+  CLUSTER_VERSION=1.36.1 \
   clusterctl generate cluster ${CLUSTER_NAME} --kubernetes-version ${CLUSTER_VERSION} --flavor eks-managedmachinepool > k8s/manifests.yaml
 ```
 
