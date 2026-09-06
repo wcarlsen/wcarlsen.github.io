@@ -51,7 +51,7 @@ A `ClusterResourceSet` targets a cluster using label selectors, so we may label 
 
 ### Helm addon
 
-The second method we will cover is the Helm addon, which can be enabled by adding `--addon helm` when bootstrapping the management cluster. This will make the `HelmChartProxy` custom resource available and install a controller called capah. If we inspect an example resource where we deploy the metrics-server Helm chart, we will see that it follows the same concept: it uses a cluster label selector, and the rest of the spec relates to the Helm chart we wish to consume.
+The second method we will cover is the Helm addon, which can be enabled by adding `--addon helm` when bootstrapping the management cluster. This will make the `HelmChartProxy` custom resource available and install a controller called caaph. If we inspect an example resource where we deploy the metrics-server Helm chart, we will see that it follows the same concept: it uses a cluster label selector, and the rest of the spec relates to the Helm chart we wish to consume.
 
 ```yaml
 apiVersion: addons.cluster.x-k8s.io/v1alpha1
