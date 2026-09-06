@@ -9,7 +9,7 @@ tags:
 
 # Playing with Cluster API helm addon
 
-In the previous post, we continued the journey of playing with Cluster API, and tried to cover how to get things onto a workload cluster see the post [here](2026-09-06-playing-with-cluster-api-continued.md). Here we went through `ClusterResourceSet` and `HelmChartProxy`. In this post we will dig deeper into the capabilities of `HelmChartProxy` with focus on templating propagating cluster infrastructure specific details.
+In the previous post, we continued the journey of playing with Cluster API, and tried to cover how to get things onto a workload cluster see the post [here](2026-09-05-playing-with-cluster-api-continued.md). Here we went through `ClusterResourceSet` and `HelmChartProxy`. In this post we will dig deeper into the capabilities of `HelmChartProxy` with focus on templating propagating cluster infrastructure specific details.
 
 ### Why is this important?
 
