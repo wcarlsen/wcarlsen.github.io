@@ -8,13 +8,13 @@ tags:
 
 # Playing with Cluster API continued
 
-In the previous post we bootstrapped a Cluster API management cluster onto a local Kubernetes distribution and used that to provision a workload cluster. We also made sure that we could take backup of workload cluster related resources and restore them, making the need for long live management clusters less important. See the post [here](2026-08-18-playing-with-cluster-api.md). In this post we will focusing more on Cluster API specific ways to deploy things onto the workload cluster, which is important for bootstrapping GitOps capabilties among other things. It should be noted that all methods covered here will first apply things to the workload cluster once it is ready.
+In the previous post, we bootstrapped a Cluster API management cluster onto a local Kubernetes distribution and used it to provision a workload cluster. We also made sure that we could take backups of resources related to the workload cluster and restore them, reducing the need for long-lived management clusters. See the post [here](2026-08-18-playing-with-cluster-api.md). In this post we will focus more on Cluster API-specific ways to deploy resources onto the workload cluster, which is important for bootstrapping GitOps capabilities, among other things. Note that all methods covered here apply resources to the workload cluster once it is ready.
 
 ### ClusterResourceSet
 
-With Cluster API we can enable ClusterResourceSet by  setting the experimental feature with the flag `EXP_CLUSTER_RESOURCE_SET=true` when bootstrapping the management cluster. This ensures that the custom resource `ClusterResourceSet` becomes available on our management cluster. But how does it work?
+With Cluster API we can enable ClusterResourceSet by setting the experimental feature flag `EXP_CLUSTER_RESOURCE_SET=true` when bootstrapping the management cluster. This ensures that the custom resource `ClusterResourceSet` becomes available on our management cluster. But how does it work?
 
-The concept is pretty simple to grasp if we inspect an example of the resource
+The concept is pretty simple to grasp if we inspect an example of the resource:
 
 ```yaml
 ---
@@ -47,11 +47,11 @@ data:
       name: my-new-namespace
 ```
 
-A `ClusterResourceSet` targets a cluster using label selectors, so we my label our workload cluster resource to make this work. Then it references resources like `ConfigMap` and `Secret` (I haven't tried with `Secret`) that contains the manifest we want applied on our target cluster. In this example it is just a namespace, but it can be arbitrary comlex. Lastly we have a strategy which can be `ApplyOnce` or `Reconcile`. It should be noted that if we delete any resources in our configmap Cluster API will not delete the resource in the target cluster to my knowledge. We could have wished for better controller functionality, but for bootstrapping it probably works okay. You can probably read between the lines, that I'm not the biggest of fans.
+A `ClusterResourceSet` targets a cluster using label selectors, so we may label our workload cluster to make this work. Then it references resources like `ConfigMap` and `Secret` (I haven't tried this with `Secret`) that contain the manifests we want applied to our target cluster. In this example it is just a namespace, but it can be arbitrarily complex. Lastly, the strategy can be `ApplyOnce` or `Reconcile`. Note that if we delete any resources in our `ConfigMap`, Cluster API will not delete the corresponding resources in the target cluster, to my knowledge. We could wish for better controller functionality, but for bootstrapping it probably works fine. You can probably read between the lines that I'm not the biggest fan.
 
 ### Helm addon
 
-The second method we will cover is Helm addon, which can be enabled by adding `--addon helm` when bootstrapping the management cluster. This will make the `HelmChartProxy` custom resource available and install a controller called capah. If we inspect an example resource where we just deploy the metrics-server helm chart. We will see that it follows the same concept of using a cluster label selector and the rest of the spec is related to the helm chart we whish to consume.
+The second method we will cover is the Helm addon, which can be enabled by adding `--addon helm` when bootstrapping the management cluster. This will make the `HelmChartProxy` custom resource available and install a controller called capah. If we inspect an example resource where we deploy the metrics-server Helm chart, we will see that it follows the same concept: it uses a cluster label selector, and the rest of the spec relates to the Helm chart we wish to consume.
 
 ```yaml
 apiVersion: addons.cluster.x-k8s.io/v1alpha1
@@ -73,4 +73,4 @@ spec:
       createNamespace: true
 ```
 
-Unlike with ClusterResourceSet, when delete a HelmChartProxy resource it will also be deleted in the target cluster. So it follows the concept we would expect from a proper controller. If your need for bootstrapping is covered by Helm, I would strongly suggest this as the prefferred method.
+Unlike with ClusterResourceSet, when we delete a `HelmChartProxy` resource the chart will also be removed from the target cluster. So it behaves as we'd expect from a proper controller. If your bootstrapping needs are covered by Helm, I would strongly suggest this as the preferred method.
