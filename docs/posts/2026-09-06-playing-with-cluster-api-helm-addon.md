@@ -2,6 +2,7 @@
 date: 2026-09-06
 tags:
   - aws
+  - eks
   - kubernetes
   - capi
   - helm

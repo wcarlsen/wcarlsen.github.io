@@ -3,6 +3,7 @@ date: 2026-08-25
 tags:
   - aws
   - kubernetes
+  - eks
   - capi
 ---
 
