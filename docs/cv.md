@@ -2,7 +2,7 @@
 
 ## Resume
 
-I (Willi Carlsen) am 38 years old and work as a Senior Cloud Engineer at DFDS, a big danish logistics company, where I support digital transformation via building a developer platform utilizing AWS, Kubernetes, Kafka and more. I consider myself an AWS and Kubernetes expert and is an active contributor in the opensource community surrounding it.
+I (Willi Carlsen) am 38 years old and work as a Senior Cloud Engineer at DFDS, a big danish logistics company, where I support digital transformation via building and supporting a developer platform utilizing AWS, Kubernetes, Kafka and more. I consider myself an AWS and Kubernetes expert and I'm an active contributor in the opensource community surrounding it with the main contributions made to Cluster-Autoscaler and vCluster projects.
 
 ## Experience
 
@@ -10,7 +10,7 @@ I (Willi Carlsen) am 38 years old and work as a Senior Cloud Engineer at DFDS, a
 
 ##### DFDS (Aug 25 - present)
 
-Developing and maintaining DFDS's platform setup, helping developers to fast and easy build and deploy. DFDS has been investing in Cloud and Kubernetes and currently runs cluster with almost ~3000 pods.
+Developing and maintaining DFDS's platform setup, helping developers to fast and easy build and deploy. DFDS has been investing in Cloud and Kubernetes and currently runs a cluster with almost ~3000 pods.
 
 ### Senior Cloud Engineer
 
@@ -54,10 +54,12 @@ An experiment trying, via optomechanical effects, to laser cool a nano-membrane 
 * AWS
 * GitOps practices
 * Scripting and automation
+* Observability
 * and much more
 
 ## Other things that I'm proud of
 
+* [My tech blog](index.md)
 * [1Password/load-secrets-action contributor](https://github.com/1Password/load-secrets-action/pull/118)
 * [Home-manager module maintainer and contributor](https://github.com/nix-community/home-manager/pulls?q=is%3Apr+is%3Aclosed+author%3Awcarlsen)
 * [Nixpkgs package maintainer and contributor](https://github.com/NixOS/nixpkgs/pulls?q=is%3Apr+author%3Awcarlsen+is%3Aclosed)
@@ -65,7 +67,8 @@ An experiment trying, via optomechanical effects, to laser cool a nano-membrane 
 * [loft/vcluster contributor](https://github.com/loft-sh/vcluster/pulls?q=is%3Apr+author%3Awcarlsen+is%3Aclosed)
 * [Co-creator of Crossplane provider for Confluent Kafka (now archived)](https://github.com/dfds/provider-confluent)
 * [Certified Kubernetes Administrator (CKA) 2020](assets/documents/cka.pdf)
-* Recieved Niels Bohr Institute yearly teaching prize in 2013 the Jens Martin Knudsen teaching prize for the performance done in laboratory courses in Classical Mechanics 1 & 2. Teaching students physics, laboratory routines, statistics and programming.
+* [fluent/fluentd-kubernetes-daemonset contributor](https://github.com/fluent/fluentd-kubernetes-daemonset/pull/370)
+* Recieved Niels Bohr Institute yearly physics teaching prize in 2013, the Jens Martin Knudsen teaching prize for the performance done in laboratory courses in Classical Mechanics 1 & 2. Teaching unviserisity students physics, laboratory routines, statistics and programming.
 
 ## About me
 

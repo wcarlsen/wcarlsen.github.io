@@ -1,5 +1,5 @@
 # About me
 
-I (Willi Carlsen) am 38 years old and I work as a Senior Cloud Engineer at DFDS. I live in Copenhagen with my family. My spare time is spend on family, friends, fishing, self hosting, programming, Linux, Nix, Kubernetes, the command line, Open-Source software, cloud computing/infrastructure, sailing, photography and much more.
+I (Willi Carlsen) am 38 years old and I work as a Senior Cloud Engineer at DFDS. I live in Copenhagen with my family. My spare time is spend on family, travelling, friends, fishing, self hosting, programming, Linux, Nix, Kubernetes, the command line, contributing to Open-Source software, cloud computing/infrastructure, sailing, photography, writing blog posts and much more.
 
 ![me](assets/images/me.png)
