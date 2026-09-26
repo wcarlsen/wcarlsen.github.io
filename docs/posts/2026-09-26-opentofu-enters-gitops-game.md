@@ -39,4 +39,4 @@ spec:
 
 ### Conclusion
 
-In conclusion this probably makes OpenTofu/Terraform somewhat relevant as an alternative to Crossplane, ACK and others. Tofu-controller isn't perfect in any way and should also be considered as a relative immature project. Personally I was positively surprised by the simplicity of the project and I would also consider it an viable option.
+In conclusion this probably makes OpenTofu/Terraform somewhat relevant as an alternative to Crossplane, ACK and others. Tofu-controller isn't perfect in any way and should also be considered as a relative immature project. Personally I was positively surprised by the simplicity of the project and I would also consider it an viable option, because there are just so many benefits when it comes to the ecosystem around Opentofu/Terraform.
