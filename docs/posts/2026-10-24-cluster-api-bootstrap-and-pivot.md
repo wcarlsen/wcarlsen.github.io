@@ -22,6 +22,6 @@ So how would the process actually look like.
 1. Pivot CAPI related resources to new cluster with `clusterctl move --to-kubeconfig`
 1. Remove local bootstrap cluster with `minikube delete`
 
-The new cluster is now managing it self. This of course means that we can solve the chicken and the egg problem using only Cluster API. But it also means that all clusters created with Cluster API can now manage their own resources and create total isolation. If this is a good idea or not I will let you think about.
+The new cluster is now managing it self. This of course means that we can solve the chicken and the egg problem using only Cluster API. But it also means that all clusters created with Cluster API can now manage their own resources and create total isolation. It also removes the overhead of having a dedicated management cluster, if you cluster count is low. If this is a good idea or not I will let you think about.
 
 Lastly here is a link to the [documentation](https://cluster-api.sigs.k8s.io/clusterctl/commands/move#bootstrap--pivot).
