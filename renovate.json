@@ -6,6 +6,7 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
+  "dependencyDashboard": true,
   "pre-commit": {
     "enabled": true
   },
@@ -26,7 +27,6 @@
       "minimumReleaseAge": "1 day",
       "automerge": false,
       "matchCurrentVersion": "!/(^0|alpha|beta)/",
-      "dependencyDashboard": true
     },
     {
       "matchUpdateTypes": [
@@ -35,7 +35,6 @@
       "minimumReleaseAge": "7 day",
       "automerge": false,
       "matchCurrentVersion": "!/(^0|alpha|beta)/",
-      "dependencyDashboard": true
     },
     {
       "matchUpdateTypes": [
@@ -43,7 +42,6 @@
       ],
       "minimumReleaseAge": "14 day",
       "automerge": false,
-      "dependencyDashboard": true
     },
     {
       "matchDatasources": [
