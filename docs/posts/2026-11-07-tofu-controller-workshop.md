@@ -11,7 +11,7 @@ tags:
 
 # Tofu-controller workshop
 
-In this post I'm sharing a workshop I created for my collegues at work recently.
+In this post I'm sharing a workshop I created for my colleagues at work recently.
 
 ### Requirement
 
@@ -26,7 +26,7 @@ In this post I'm sharing a workshop I created for my collegues at work recently.
 2. Create an AWS IAM role or anything you like using tofu-controller
 3. Play around
 
-### Usefull links
+### Useful links
 
 * https://fluxcd.io/flux/installation/bootstrap/github/#bootstrap-without-a-github-pat
 * https://flux-iac.github.io/tofu-controller/
@@ -138,7 +138,7 @@ resource "aws_iam_role" "this" {
 }
 ```
 
-Then deploy an AWS secret using you local capability credentials (required to already be logged in with `go-aws-sso`).
+Then deploy an AWS secret using your local credentials (required to already be logged in with `go-aws-sso` or which ever tool you use).
 
 ```bash
 aws_creds="$(aws configure export-credentials --format env-no-export)"

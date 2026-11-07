@@ -6,7 +6,7 @@ tags:
 
 # Release on push GitHub workflow
 
-I have for a long time been using automatic creattion of releases on push for some of the projects that I've been working on. So when merging a PR with labels `release:{norelease,patch,minor,major}` a workflow would create the according release, e.g. `v1.2.3`. Recently I had to expand this functionality so that both major and minor tags (mutable) will be produced, in this case `v1` and `v1.2`. Here is what I ended implementing.
+I have for a long time been using automatic creation of releases on push for some of the projects that I've been working on. So when merging a PR with labels `release:{norelease,patch,minor,major}` a workflow would create the according release, e.g. `v1.2.3`. Recently I had to expand this functionality so that both major and minor tags (mutable) will be produced, in this case `v1` and `v1.2`. Here is what I ended up implementing.
 
 
 ```yaml
@@ -37,4 +37,4 @@ jobs:
           tag: ${{ steps.release-on-push.outputs.tag_name }}
 ```
 
-There are probably other solutions doing this and maybe even better, but this what I ended up doing.
+There are probably other solutions doing this and maybe even better, but this is what I ended up doing.
