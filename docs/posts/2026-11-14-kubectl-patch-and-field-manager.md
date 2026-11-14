@@ -2,6 +2,9 @@
 date: 2026-11-14
 tags:
   - kubernetes
+  - kubectl
+  - flux
+  - gitops
 ---
 
 # Kubectl patch and field manager
