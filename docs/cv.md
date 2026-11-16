@@ -51,6 +51,7 @@ An experiment trying, via optomechanical effects, to laser cool a nano-membrane 
 * Terraform/OpenTofu
 * Nix
 * Kubernetes
+* Cluster API
 * AWS
 * GitOps practices
 * Scripting and automation
