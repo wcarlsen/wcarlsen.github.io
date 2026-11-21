@@ -10,7 +10,7 @@ I (Willi Carlsen) am 38 years old and work as a Senior Cloud Engineer at DFDS, a
 
 ##### DFDS (Aug 25 - present)
 
-Developing and maintaining DFDS's platform setup, helping developers to fast and easy build and deploy. DFDS has been investing in Cloud and Kubernetes and currently runs a cluster with almost ~3000 pods.
+Developing and maintaining DFDS's platform setup, helping developers to fast and easy build and deploy. DFDS has been investing in Cloud and Kubernetes for years and currently runs a cluster with almost ~3000 pods.
 
 ### Senior Cloud Engineer
 
