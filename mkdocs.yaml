@@ -75,3 +75,5 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - footnotes
+extra_javascript:
+  - https://unpkg.com/magic-snowflakes/dist/snowflakes.auto.min.js
