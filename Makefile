@@ -1,12 +1,7 @@
-.PHONY: run build deploy
+.PHONY: run build
 
 run:
-	mkdocs serve --strict --open
+	zensical serve --open --strict
 
 build:
-	mkdocs build --strict
-
-deploy:
-	git config user.name github-actions[bot]
-	git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-	mkdocs gh-deploy --strict --force
+	zensical build --clean --strict

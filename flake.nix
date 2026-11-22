@@ -15,10 +15,7 @@
       devShells = {
         default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            python314Packages.mkdocs
-            python314Packages.mkdocs-material
-            python314Packages.cachecontrol
-            python314Packages.mkdocs-rss-plugin
+            python314Packages.zensical
             pngquant
           ];
         };
